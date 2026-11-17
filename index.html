@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A fun virtual pet game">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load jQuery before our JavaScript file -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>This is your Giga Pet!</h1>
+      <p>Take care of your pet by feeding, playing, exercising, and letting it nap!</p>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+        <!-- New dog image -->
+        <img class="pet-image"
+             src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=500"
+             alt="Golden retriever dog">
+      </section>
+
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+
+        <!-- New action button -->
+        <div class="button-container">
+          <button class="treat-button">Treat</button>
+          <button class="play-button">Play</button>
+          <button class="exercise-button">Exercise</button>
+          <button class="nap-button">Nap</button>
+        </div>
+
+        <!-- Displays comments from the pet -->
+        <div class="pet-message">
+          Your pet's messages will appear here!
+        </div>
+
+        <!-- Stores previous notifications -->
+        <div class="history-container">
+          <h3>Pet Message History</h3>
+          <ul class="message-history"></ul>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>

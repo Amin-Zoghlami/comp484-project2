@@ -1,0 +1,154 @@
+
+/* Applies consistent sizing to all elements. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 25px;
+  background-color: #f4f7ee;
+  color: #263629;
+}
+
+/* Header styling */
+header {
+  border-bottom: 2px solid #809b75;
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #365b3e;
+}
+
+header p {
+  color: #586b55;
+}
+
+/* Main page layout */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+/* Pet image styling */
+.pet-image-container {
+  padding: 10px;
+}
+
+.pet-frame {
+  background-color: white;
+  padding: 12px;
+  border: 4px solid #8ba77d;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pet-image {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Pet information dashboard */
+.dashboard {
+  padding: 20px;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard div {
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Button styling */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button-container button {
+  width: 105px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #365b3e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Button hover effect */
+.button-container button:hover {
+  background-color: #638b63;
+  transform: scale(1.05);
+}
+
+/* Pet notification styling */
+.pet-message {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #e5f0df;
+  border-left: 5px solid #638b63;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #365b3e;
+  min-height: 50px;
+}
+
+/* Notification history */
+.history-container {
+  margin-top: 20px;
+  padding: 12px;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #f5f7f2;
+  border: 1px solid #cbd8c4;
+  border-radius: 8px;
+}
+
+.history-container h3 {
+  margin-top: 0;
+  color: #365b3e;
+}
+
+.message-history {
+  padding-left: 20px;
+}
+
+.message-history li {
+  margin-bottom: 8px;
+  color: #586b55;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 600px) {
+  body {
+    margin: 15px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .pet-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .dashboard {
+    width: 100%;
+  }
+}
